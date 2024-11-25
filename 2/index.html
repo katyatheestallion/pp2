@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт портфолио</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Мое Портфолио</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="theme-selector">
+            <label for="theme">Тема:</label>
+            <select id="theme">
+                <option value="light">Светлая</option>
+                <option value="dark">Темная</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="info">
+                <img src="./avatar.jpg" width="150" height="150" alt="Моя фотка" class="avatar"/>
+                <div class="info-text">
+                    <h2>Антонова Екатерина Алексеевна</h2>
+                    <p>Группа: БПИ2304</p>
+                    <p>Дата рождения и возраст: 23.06.05; 19 лет</p>
+                    <p>Тг: <a href="https://t.me/katyatheestallion">@katyatheestallion</a></p>
+                    <p>GitHub: <a href="https://github.com/katyatheestallion">@katyatheestallion</a></p>
+                    <button id="showMoreBtn">Показать больше</button>
+                    <div id="moreInfo" class="hidden">
+                        <p>Немного фактов обо мне: я фанатею по k-pop, я люблю готовить различную выпечку, а также я очень много читаю. Моя маленькая мечта - это в живую увидеть и поучавствовать во внутренней кухне k-pop. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <h4> На данный момент у меня нет никаких проектов(</h4>
+            <div class="slider">
+                <div class="slides">
+                    <img src="./cat1.jpg" alt="Мем с котиком 1">
+                    <img src="./cat2.jpg" alt="Мем с котиком 2">
+                    <img src="./cat3.jpg" alt="Мем с котиком 3">
+                    <img src="./cat4.jpg" alt="Мем с котиком 4">
+                    <img src="./cat5.jpg" alt="Мем с котиком 5">
+                </div>
+                <button class="slider-btn prev">&#10094;</button>
+                <button class="slider-btn next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <ul>
+                <li><a href="https://t.me/katyatheestallion">Telegram</a></li>
+                <li><a href="https://github.com/katyatheestallion">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Антонова Екатерина. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
